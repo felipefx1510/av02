@@ -1,4 +1,3 @@
-# login.py
 from time import sleep
 def login(usuarios_cadastrados): # entre parentes está chamando a variável global
     
@@ -25,7 +24,7 @@ def login(usuarios_cadastrados): # entre parentes está chamando a variável glo
                     opcao_usuario = int(input('Deseja adicionar mais um usuário?\n1. Sim\n2. Não\n'))
                     break
                 print('Faça seu login novamente para continuar.')
-                login(usuarios_cadastrados)  # Reautenticação após o administrador decidir não adicionar mais usuários
+                login(usuarios_cadastrados)  #reautenticação
             if opcao == 2:
                 print('Você escolheu não adicionar um novo usuário.')
                 print('Indo para o menu...')
@@ -37,4 +36,4 @@ def login(usuarios_cadastrados): # entre parentes está chamando a variável glo
             sleep(2)
     else:
         print('Nome de usuário ou senha incorretos. Por favor, tente novamente.')
-        login(usuarios_cadastrados)
+        login(usuarios_cadastrados) #chamar novamente até o usuário inicial conseguir logar

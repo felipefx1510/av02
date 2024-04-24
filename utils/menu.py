@@ -80,3 +80,8 @@ def menu(lanches):
         print('Saindo...')
         sleep(2)
         return
+    
+    else:
+        print('Opção inválida, tente novamente!')
+        voltando_menu()
+        menu(lanches)
