@@ -18,7 +18,7 @@ def menu(lanches):
     if opcao == 1:
         while True:
             nome = str(input('Digite o nome do produto: ')).lower()
-            valor = float(input('Digite o valor do produto: '))  # Certifique-se de que 'valor' é um float
+            valor = float(input('Digite o valor do produto: '))
             lanches[nome] = valor
             print('Produto cadastrado com sucesso!')
             opcao = int(input('Deseja adicionar outro produto?\n1. Sim\n2. Não\n'))
@@ -35,14 +35,14 @@ def menu(lanches):
         return menu(lanches)
     
     elif opcao == 3:
-        while True:  # Adiciona um loop while aqui
+        while True:
             nome = input('Digite o nome do produto que deseja buscar: ').lower()
             if nome in lanches:
                 print(f'{nome}: R${lanches[nome]:.2f}')
             else:
                 print('Produto não encontrado. Tente novamente')
             opcao = int(input('Deseja buscar outro produto?\n1. Sim\n2. Não\n'))
-            if opcao != 1:  # Se o usuário digitar 0, quebre o loop
+            if opcao != 1:
                 break
         voltando_menu()
         return menu(lanches)

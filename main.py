@@ -1,4 +1,5 @@
-# main.py
+#Alycia Tasla e Felipe Félix - 2º Periódo S.I
+
 from utils import *
 
 usuarios_cadastrados = {
@@ -9,7 +10,6 @@ lanches = {
     '': 0.0
 }
 
-# Exemplo de uso da função fazer_login()
 print('Olá! Bem-vindo ao sistema Barriga Lanches!')
 login(usuarios_cadastrados)
 menu(lanches)
